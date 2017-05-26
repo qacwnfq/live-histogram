@@ -1,0 +1,28 @@
+{
+   "name": "data-input-widget",
+   "description": "This is where all the data comes in.",
+
+   "integration": {
+      "technology": "vue",
+      "type": "widget"
+   },
+
+   "features": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {
+         "input": {
+            "type": "object",
+            "description": "Takes input from form and publishes is.",
+            "required": [ "resource" ],
+            "properties": {
+               "resource": {
+                  "type": "string",
+                  "format": "topic",
+                  "axRole": "outlet"
+               }
+            }
+         }
+      }
+   }
+}

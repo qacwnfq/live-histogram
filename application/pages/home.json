@@ -1,0 +1,36 @@
+{
+   "layout": "one-column",
+
+   "areas": {
+      "activities": [
+         {
+            "widget": "run-root-activity",
+            "features": {
+               "input": {
+                  "resource": "input"
+               },
+               "output": {
+                  "resource": "output"
+               }
+            }
+         }
+      ],
+
+      "header": [
+      ],
+
+      "content": [
+         {
+            "widget": "data-input-widget",
+            "features": { 
+               "input": {
+                  "resource": "input"
+               }
+            }
+         }
+      ],
+
+      "footer": [
+      ]
+   }
+}

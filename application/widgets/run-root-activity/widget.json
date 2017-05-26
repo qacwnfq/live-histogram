@@ -1,0 +1,40 @@
+{
+   "name": "run-root-activity",
+   "description": "runs cerns python root library and returns results.",
+
+   "integration": {
+      "technology": "plain",
+      "type": "activity"
+   },
+
+   "features": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "required": [ "input", "output" ],
+      "type": "object",
+      "properties": {
+         "input": {
+            "type": "object",
+            "required": [ "resource" ],
+            "properties": {
+               "resource": {
+                  "type": "string",
+                  "format": "topic",
+                  "description": "Name of the data resource input.",
+                  "axRole": "inlet"
+               }
+            }
+         },
+         "output": {
+            "type": "object",
+            "required": [ "resource" ],
+            "properties": {
+               "resource": {
+                  "type": "string",
+                  "format": "topic",
+                  "axRole": "outlet"
+               }
+            }
+         }
+      }
+   }
+}
